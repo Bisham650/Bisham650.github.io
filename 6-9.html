@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Descendant Selector Example</title>
+    <style>
+        div p { color: blue;  font-weight: bold; }
+        section li { list-style-type: square;   color: green; }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This paragraph is inside a div and will be styled.</p>
+        <p>This one too, because it is also inside a div.</p>
+    </div>
+    <section>
+        <ul>
+            <li>This list item is inside a ul within a section.</li>
+            <li>This one too!</li>
+        </ul>
+    </section>
+    <p>This paragraph is not inside a div, so it won't be styled.</p>
+</body>
+</html>
