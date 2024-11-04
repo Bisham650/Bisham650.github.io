@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adjacent Sibling Selector Example</title>
+    <style>
+        p { color: black; }
+        p + h2 { color: red;  font-size: 24px; }
+        h1 + p { color: blue; }
+    </style>
+</head>
+<body>
+    <h1>Main Heading</h1>
+    <p>This paragraph comes immediately after the h1 and will be styled blue.</p>
+    <p>This paragraph is not styled by the adjacent sibling selector targeting h1 + p.</p>
+    <p>This is a paragraph.</p>
+    <h2>This h2 follows the paragraph and will be styled red by the adjacent sibling selector.</h2>
+</body>
+</html>
