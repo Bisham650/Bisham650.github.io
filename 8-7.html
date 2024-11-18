@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS Grid Example</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; }
+    .grid-container {
+      display: grid; gap: 10px; height: 100vh;
+      grid-template-areas: "header header" "sidebar main" "footer footer";
+      grid-template-rows: 70px 1fr 50px; grid-template-columns: 200px 1fr;
+    }
+    .item { padding: 20px; color: white; text-align: center; }
+    .header { grid-area: header; background-color: #4CAF50; }
+    .sidebar { grid-area: sidebar; background-color: #2196F3; }
+    .main { grid-area: main; background-color: #f44336; }
+    .footer { grid-area: footer; background-color: #555; }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="item header">Header</div>
+    <div class="item sidebar">Sidebar</div>
+    <div class="item main">Main Content</div>
+    <div class="item footer">Footer</div>
+  </div>
+</body>
+</html>

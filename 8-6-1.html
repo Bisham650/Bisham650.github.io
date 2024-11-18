@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; } /* General Reset */
+      body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; background-color: #f4f4f9; }
+      .header { background-color: #4CAF50; color: white; text-align: center; padding: 20px 0; }
+      .nav { background-color: #333; }
+      .nav ul { display: flex; justify-content: center; list-style: none; padding: 10px; }
+      .nav ul li { margin: 0 15px; }
+      .nav ul li a { text-decoration: none; color: white; font-weight: bold; transition: color 0.3s ease; }
+      .nav ul li a:hover { color: #4CAF50; }
+      .main { display: flex; gap: 20px; padding: 20px; margin: 20px; }
+      .content { flex: 3; background: white; padding: 20px; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+      .sidebar { flex: 1; background: white; padding: 20px; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+      .footer { background-color: #333; color: white; text-align: center; padding: 10px 0; margin-top: 20px; }
+  </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Flexbox Layout System</h1>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <section class="content">
+            <h2>Welcome to Flexbox</h2>
+            <p>Flexbox makes it easy to create flexible, responsive designs without much effort. It is great for aligning elements and distributing space dynamically.</p>
+        </section>
+        <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <p>This is a sidebar section, perfect for additional links, ads, or content.</p>
+        </aside>
+    </main>
+    <footer class="footer">
+        <p>© 2024 Flexbox Layout. All rights reserved.</p>
+    </footer>
+</body>
+</html>
