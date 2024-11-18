@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Horizontal Alignment Layout</title>
+    <style>
+        body {
+            margin: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;
+        }
+        .container {
+            overflow: hidden; 
+            max-width: 1000px; margin: 20px auto; padding: 10px;
+            text-align: center; align-items: center;
+        }
+        .box {
+            float: left; /* Aligns boxes horizontally */
+            width: 25%; /* Each box takes 30% of the container */
+            margin: 1.5%; /* Adds spacing between boxes */
+            padding: 20px;
+            background-color: #ffffff; color: #333;
+            border-radius: 10px; border: 1px solid #ddd; /* Light border */
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+        }
+       .box:hover {
+            transform: translateY(-5px); /* Lifts the box slightly on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"> Box 1</div>
+        <div class="box"> Box 2</div>
+        <div class="box"> Box 3</div>
+    </div>
+</body>
+</html>
