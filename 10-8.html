@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Changing Style of Elements</title>
+  <script>
+    window.onload = function () {
+      let result = '';
+      for (let i = 0; i < 256; i++) {
+        result += '<div></div>';
+      }
+      document.body.innerHTML = result;
+       let divs = document.getElementsByTagName('div');
+      for (let i = 0; i < divs.length; i++) {
+        let div = divs[i];
+        div.style.height = '2px';
+        div.style.background = 'rgb(' + 255 + ',' + i + ',' + i + ')';
+      }
+    };
+  </script>
+</head>
+<body>
+</body>
+</html>

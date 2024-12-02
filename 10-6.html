@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>innerHTML AND innerText</title>
+  <script>
+    window.onload = function() {
+      let result = '';
+      for(let i=0; i<10; i++) {
+        result = result + '<h2>Hello DOM ' + i + '</h2>';
+      }
+      document.body.innerHTML = result;  // (1)
+//     document.body.innerText = result;    // (2)
+    };
+  </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Changing Attributes</title>
+ <script>
+  window.onload = function() {
+   // Select the image and button
+   const image = document.getElementById('image');
+   const button = document.getElementById('changeSrcButton');
+   // Add click event to change the image's attributes
+   button.addEventListener('click', () => {
+    image.setAttribute('src', 'https://via.placeholder.com/200'); // Change the image source
+    image.setAttribute('alt', 'Updated Image'); // Update the alt attribute
+   });
+  };
+ </script>
+</head>
+<body>
+ <img id="image" src="https://via.placeholder.com/150" alt="Placeholder Image">
+ <br>
+ <button id="changeSrcButton">Change Image</button>
+</body>
+</html>

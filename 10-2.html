@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Execution order of Web page</title>
+</head>
+<body>
+  <h2>Hello, DOM 1</h2>
+  <h2>Hello, DOM 2</h2>
+  <h2>Hello, DOM 3</h2>
+
+  <script>
+    document.querySelector('h2').style.backgroundColor = 'yellow';  // background color
+    document.querySelector('h2').style.Color = 'blue';  // font color
+  </script>
+</body>
+</html>
