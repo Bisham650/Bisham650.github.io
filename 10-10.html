@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Add and Remove Menu Items</title>
+ <script>
+  window.onload = function() {
+   const menu = document.getElementById('menu');
+   const addMenuItemButton = document.getElementById('addMenuItem');
+   const removeMenuItemButton = document.getElementById('removeMenuItem');
+    // Add a new menu item
+   addMenuItemButton.addEventListener('click', () => {
+    const newMenuItem = document.createElement('li'); // Create a new <li> element
+    newMenuItem.textContent = `Menu Item ${menu.children.length + 1}`; // Add text dynamically
+    menu.appendChild(newMenuItem); // Add the new item to the menu
+   });
+    // Remove the last menu item
+   removeMenuItemButton.addEventListener('click', () => {
+    if (menu.children.length > 0) {
+     menu.removeChild(menu.lastElementChild); // Remove the last <li> element
+    } else { alert('No more menu items to remove!'); }
+   });
+  }
+ </script>
+</head>
+<body>
+ <ul id="menu">
+  <li>Home</li>
+  <li>About</li>
+  <li>Contact</li>
+ </ul>
+ <button id="addMenuItem">Add Menu Item</button>
+ <button id="removeMenuItem">Remove Last Menu Item</button>
+</body>
+</html>

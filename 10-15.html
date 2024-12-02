@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mouseover Event</title>
+  <style>
+    div { width: 200px; height: 200px; background-color: lightblue; }
+  </style>
+  <script>
+    window.onload = function() {
+      const hoverArea = document.getElementById("hoverArea");
+
+      hoverArea.addEventListener("mouseover", () => {
+        hoverArea.style.backgroundColor = "lightgreen";
+      });
+      hoverArea.addEventListener("mouseleave", () => {
+        hoverArea.style.backgroundColor = "lightblue";
+      });
+    };
+  </script>
+</head>
+<body>
+  <div id="hoverArea">Hover over me</div>
+</body>
+</html>
